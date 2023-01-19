@@ -11,11 +11,9 @@ export const Projects = () => {
                 <div className={s.project}>
                     <Project title={'Title'}
                              description={'Short description'}
-                             logo={''}
                     />
                     <Project title={'Title'}
                              description={'Short description'}
-                             logo={''}
                     />
                 </div>
             </div>
