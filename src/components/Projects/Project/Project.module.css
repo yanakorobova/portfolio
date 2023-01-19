@@ -1,0 +1,27 @@
+.projectBlock {
+    width: 350px;
+    border: 1px solid;
+}
+.imageContainer{
+    height: 250px;
+    width: 100%;
+    background-color: #bec0c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutProject{
+    background-color: #ced1d5;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.title{
+    background-color: #c5c7cb;
+}
+.description{
+    width: 90%;
+    background-color: #c5c7cb;
+}
