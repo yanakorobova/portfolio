@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    height: 100%;
+    width: 80%;
+}
+
+@media (max-width: 960px) {
+    .container{
+        justify-content: center;
+    }
+}
+.button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid;
+    background-color: #818283;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #f7f7f7;
+}
