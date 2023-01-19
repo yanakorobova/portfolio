@@ -8,7 +8,7 @@ export const Projects = () => {
         <div className={s.projectsBlock}>
             <div className={`${c.container} ${s.projectsContainer}`}>
                 <h2 className={s.title}>My projects</h2>
-                <div className={s.project}>
+                <div className={s.projects}>
                     <Project title={'Title'}
                              description={'Short description'}
                     />
