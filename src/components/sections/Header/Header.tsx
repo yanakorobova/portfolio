@@ -1,7 +1,7 @@
 import React from 'react';
 import s from 'components/sections/Header/Header.module.scss'
 import {HiBars3BottomLeft} from "react-icons/hi2";
-import {Connection} from "components/common/connection/Connection";
+import {Connection} from "components/common/Connection/Connection";
 
 export const Header = () => {
 
