@@ -1,0 +1,56 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.titleBlock {
+  position: relative;
+  margin-bottom: 80px;
+  .title {
+    @include text($font-family-title, #0b0b13, 800, 30px);
+    letter-spacing: 6px;
+    position: relative;
+    left: 35px;
+    @media screen and (max-width: 450px) {
+     left:0
+    }
+    .lastWord {
+      color: $color-back;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      width: 60px;
+      background: $color-back;
+      height: 1px;
+    }
+
+    &::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -8px;
+      left: 56px;
+      right: 0;
+      background: $color-back;
+    }
+  }
+
+  .titleBg {
+    @include text($font-family-text, rgba(30, 37, 48, 0.08), 800, 60px);
+    left: 0;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    position: absolute;
+    bottom: 50%;
+    transform: translate(0%, 50%);
+    @media screen and (max-width: 450px) {
+      color: rgba(255, 255, 255, 0.08);
+    }
+  }
+}
+

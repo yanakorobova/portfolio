@@ -1,0 +1,19 @@
+@import "../../../assets/styles/mixins";
+@import "../../../assets/styles/variables";
+
+
+.skillsBlock{
+    .section{
+        @include section();
+        .container{
+            @include container($justify:center);
+            .skills{
+
+                @include flex(flex-start, flex-start);
+                flex-wrap: wrap;
+                row-gap: 30px;
+                margin: 0 -15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import '../../../assets/styles/variables';
+
+.button {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  border-radius: 35px;
+  text-align: center;
+  position: relative;
+  padding: 16px 70px 16px 35px;
+  background-color: transparent;
+  border: 1px solid $color-back;
+  color: #666;
+  font-family: inherit;
+  max-width: 220px;
+  transition: 250ms all ease-in-out;
+  .buttonIcon {
+    position: absolute;
+    right: -1px;
+    top: -2px;
+    bottom: 0;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $color-back;
+    color: white;
+    font-size: 19px;
+  }
+
+  &:before {
+    background-color: $color-back;
+    box-sizing: border-box;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: .3s ease-out all;
+  }
+
+  &:hover {
+    color: #fff
+  }
+  &:hover:before {
+    transform: translateX(0);
+  }
+}
+

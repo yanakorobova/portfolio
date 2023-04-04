@@ -1,23 +1,16 @@
 import React from 'react';
-import './App.css';
-import {Header} from "./components/Header/Header";
-import {Main} from "./components/Main/Main";
-import {Skills} from "./components/Skills/Skills";
-import {Projects} from "./components/Projects/Projects";
-import {RemoteWork} from "./components/RemoteWork/RemoteWork";
-import {Contacts} from "./components/Contacts/Contacts";
-import {Footer} from "./components/Footer/Footer";
+import {Header} from "components/sections/Header/Header";
+import {Projects} from "components/sections/Projects/Projects";
+import {Contacts} from "components/sections/Contacts/Contacts";
+import {Intro} from "components/sections/Intro/Intro";
 
 function App() {
     return (
         <div className="App">
             <Header/>
-            <Main/>
-            <Skills/>
+            <Intro/>
             <Projects/>
-            <RemoteWork/>
             <Contacts/>
-            <Footer/>
         </div>
     );
 }
