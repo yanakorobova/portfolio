@@ -4,61 +4,75 @@
 .projectBlock {
   width: 100%;
   height: 500px;
-  border-radius: 2%;
-  overflow: hidden;
   position: relative;
+  z-index: 1;
+  cursor: pointer;
+  @media screen and (min-width:850px) and (max-width: 1125px) {
+    height: 450px;
+  }
+  @media screen and (max-width:850px){
+    height: 400px;
+  }
+  &:hover a {
+    transform: scale(1.1);
+  }
 
-  .a {
+  &:hover a:after{
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    background: linear-gradient(to top,#FD4766,transparent);
+  }
+  & a {
+    border-radius: 2%;
+    display: block;
     cursor: pointer;
     height: 100%;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    @include flex(end, center, column);
+    text-decoration: none;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: transform 0.28s ease;
+    background-color: black;
+  }
 
-    .aboutProject {
-      width: 80%;
-      @include flex(start, start, column);
-      color: white;
-      background: saddlebrown;
+  .aboutProject {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    top:65%;
+    left: 0;
+    padding: 0 30px 0 30px;
+    color: white;
+    @media screen and (max-width:850px){
+      top:55%;
+    }
+    .development {
+      @include text(300, $lS: 0.5px);
+      margin-top: 0;
+    }
 
-      .title {
-        background: salmon;
-        border: 1px solid black;
-        @include text($font-family-text, #fff, 600, 30)
-      }
+    .title {
+      @include text(600, $size: 30px);;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
 
-      .description {
-        border: 1px solid black;
-        background: black;
-      }
+    .description {
+      word-spacing: 15px;
+      @include text(400, $size: 14px, $lS: 0.2px);;
     }
   }
 
-
 }
 
-/*
-.a{
-    cursor: pointer;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    @include flex(end,center,column);
-    .aboutProject{
-        width: 80%;
-        @include flex(start,start,column);
-        color: white;
-        background: saddlebrown;
-        .title{
-            background: salmon;
-            border: 1px solid black;
-            @include text($font-family-text,#fff,600,30)
-        }
-        .description{
-            border: 1px solid black;
-            background: black;
-        }
-    }
-}*/

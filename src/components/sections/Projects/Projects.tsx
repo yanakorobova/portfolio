@@ -5,10 +5,10 @@ import {works} from "./Data";
 import {Title} from "../../common/Title/Title";
 
 export const Projects = () => {
-
-    const projects = works.map((w)=>{
-        return <Project title={w.title} description={w.description} img={w.img}/>
+    const projects = works.map((work) => {
+        return <Project work={work}/>
     })
+
     return (
         <div className={s.projectsBlock}>
             <div className={s.section}>

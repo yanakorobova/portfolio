@@ -5,21 +5,21 @@ import todo from '../../../assets/images/todo.jpg'
 export const works = [
     {
         id: 1,
-        title: 'Social Network',
+        title: 'Countries',
         img: social,
-        description: 'lorem lorem lorem lorem',
-        linkDeploy: '',
+        description: 'React Redux-toolkit  Sass',
+        linkDeploy: 'https://yanakorobova.github.io/countries/',
     },
     {
         id: 2,
-        title: 'Recipe App',
+        title: 'TodoList',
         img: todo,
-        description: 'lorem lorem lorem lorem',
-        linkDeploy: '',
+        description: 'React  Redux-toolkit  Mui Sass Storybook',
+        linkDeploy: ''
     },
     {
         id: 3,
-        title: 'Recipe App',
+        title: 'Cards',
         img: 'recipe',
         description: 'lorem lorem lorem lorem',
         linkDeploy: '',

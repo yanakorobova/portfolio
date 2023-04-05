@@ -1,3 +1,5 @@
+@import 'src/assets/styles/variables';
+
 @mixin container() {
   max-width: 1240px;
   margin: 0 auto;
@@ -14,12 +16,23 @@
   }
 }
 
-@mixin text($family,$color,$weight,$size:16px) {
-  font-family: $family;
+@mixin title($color) {
+  font-family: $font-family-title;
   color: $color;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+@mixin text($weight,$color:0,$size:16px,$lH: normal,$lS:normal) {
   font-weight: $weight;
   font-size: $size;
+  line-height: $lH;
+  letter-spacing: $lS;
+  @if $color != 0 {
+    color: $color;
+  }
 }
+
 
 @mixin flex($justify,$align,$direction:row) {
   display: flex;
