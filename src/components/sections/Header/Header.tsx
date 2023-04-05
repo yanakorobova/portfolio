@@ -8,12 +8,16 @@ export const Header = () => {
     return (
         <div className={s.header}>
             <div className={s.headerBar}>
-                <HiBars3BottomLeft className={s.menuBurger} cursor={'pointer'}/>
-                <div className={s.line}></div>
-                <div className={s.connection}>
-                    <Connection/>
+                <div>
+                    <HiBars3BottomLeft className={s.menuBurger} cursor={'pointer'}/>
                 </div>
-                <div className={s.line}></div>
+                <div className={s.connection}>
+                    <div className={s.line}></div>
+                    <div className={s.icon}>
+                        <Connection/>
+                    </div>
+                    <div className={s.line}></div>
+                </div>
                 <p className={s.logo}>Portfolio.</p>
             </div>
         </div>

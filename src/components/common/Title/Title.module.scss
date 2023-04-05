@@ -4,14 +4,17 @@
 .titleBlock {
   position: relative;
   margin-bottom: 80px;
+
   .title {
-    @include text($font-family-title, #0b0b13, 800, 30px);
+    @include title(#0b0b13);
     letter-spacing: 6px;
     position: relative;
     left: 35px;
+    z-index: 20;
     @media screen and (max-width: 450px) {
-     left:0
+      left: 0
     }
+
     .lastWord {
       color: $color-back;
     }
@@ -41,13 +44,15 @@
   }
 
   .titleBg {
-    @include text($font-family-text, rgba(30, 37, 48, 0.08), 800, 60px);
+    @include text(800, rgba(30, 37, 48, 0.08), 60px);
     left: 0;
     letter-spacing: 10px;
     line-height: 0.7;
     position: absolute;
     bottom: 50%;
     transform: translate(0%, 50%);
+    user-select: none;
+    z-index: 10;
     @media screen and (max-width: 450px) {
       color: rgba(255, 255, 255, 0.08);
     }

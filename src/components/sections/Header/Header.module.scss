@@ -3,7 +3,7 @@
 
 .header {
   position: fixed;
-  z-index: 20;
+  z-index: 999;
   left: 0;
   top: 0;
   width: 130px;
@@ -14,10 +14,9 @@
   }
 
   .headerBar {
-    width: 100%;
     height: 100%;
-    padding: 40px;
-    color: black;
+    padding: 40px 0;
+    margin: 0 auto;
     @include flex(space-between, center, column);
 
     .menuBurger {
@@ -25,34 +24,43 @@
       height: 40px;
     }
 
-    .line {
-      background-color: black;
-      width: 1px;
-      min-height: 0;
-      height: 100px;
-    }
 
     .connection {
       @include flex(center, center, column);
-      gap: 15px;
+      gap: 25px;
+      height: calc(100% - 170px);
 
-      & a {
-        @include flex(center, center);
-        width: 38px;
-        height: 38px;
-        color: black;
-        font-size: 20px;
-        background: rgba(255, 255, 255, .8);
-        border-radius: 50%;
-        &:hover{
-          background: $color-back;
-          color: white;
+      .line {
+        background-color: black;
+        width: 1px;
+        flex-grow: 1;
+        @media screen and (max-width: 991px) {
+          width: 0.4px;
         }
       }
+      .icon{
+        @include flex(center, center, column);
+        gap: 15px;
+        & a {
+          @include flex(center, center);
+          width: 38px;
+          height: 38px;
+          color: black;
+          font-size: 20px;
+          background: rgba(255, 255, 255, .8);
+          border-radius: 50%;
+
+          &:hover {
+            background: $color-back;
+            color: white;
+          }
+        }
+      }
+
     }
 
     .logo {
-      @include text($font-family-text, #000, 700);
+      @include text(700);
       transform: rotate(-90deg);
     }
   }
