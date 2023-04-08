@@ -1,0 +1,73 @@
+@import 'src/assets/styles/mixins';
+@import 'src/assets/styles/variables';
+
+.nav {
+  width: auto;
+  overflow: hidden;
+  padding: 30px 45px 70px 22.5px;
+  background: linear-gradient(-45deg, transparent 25px, #2d2d2d 0);
+  .x {
+    float: right;
+    color: #b6b6b6;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transform: translateX(-400px);
+    transition: all 0.5s ease;
+    &:hover {
+      color: white;
+    }
+  }
+
+  .links {
+    width: 210px;
+    margin-top: 70px;
+    @include text(500, white, 20px, 40px);
+    transform: translateX(-400px);
+    transition: all 0.8s ease;
+    & a {
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    li {
+      width: 100%;
+      cursor: pointer;
+      color: #b6b6b6;
+
+      &:hover {
+        color: $color-back;
+      }
+
+      &:hover div {
+        color: $color-back;
+      }
+
+      &:hover div .arr {
+        color: $color-back;
+      }
+
+      & div {
+        color: white;
+        width: 100%;
+        @include flex(space-between, center);
+
+        .arr {
+          width: 8px;
+          height: 24px;
+          color: #b6b6b6;
+
+        }
+      }
+
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    height: 100%;
+  }
+  .open {
+    transform: translateX(0px);
+  }
+}

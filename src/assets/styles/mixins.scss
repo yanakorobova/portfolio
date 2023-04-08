@@ -50,10 +50,14 @@
   position: relative;
   width: calc(100% - 130px);
   left: 130px;
-  padding: 70px 4%;
+  padding: 70px 4.8% 100px 4.8%;
   @media screen and (max-width: 991px) {
     width: calc(100% - 80px);
     left: 80px;
-
   }
+  @media screen and (max-width: 360px){
+    left: 0;
+    width: 100%;
+  }
+
 }

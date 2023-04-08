@@ -8,20 +8,53 @@
   top: 0;
   width: 130px;
   height: 100%;
-  background: rgba(91%, 91%, 91%, .7);
+  background: rgba(91%, 91%, 91%, .5);
   @media screen and (max-width: 991px) {
     width: 80px;
+  }
+  @media screen and (max-width: 360px) {
+    width: 100%;
+    height: auto;
+    background: #eee;
+    border-bottom: 1px solid #ddd;
   }
 
   .headerBar {
     height: 100%;
     padding: 40px 0;
     margin: 0 auto;
+    position: relative;
+    z-index: 999;
     @include flex(space-between, center, column);
+    @media screen and (max-width: 360px) {
+      @include flex(space-between, center, row-reverse);
+      padding: 0 4.8%;
+    }
+
+    .nav {
+      height: 100%;
+      position: fixed;
+      left: 130px;
+      top: 0;
+      transition: all 0.5s ease-in-out;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 999;
+      @media screen and (max-width: 991px) {
+        left: 80px;
+      }
+      @media screen and (max-width: 360px) {
+        left: 0;
+      }
+    }
 
     .menuBurger {
       width: 40px;
       height: 40px;
+      @media screen and (max-width: 991px) {
+        width: 35px;
+        height: 35px;
+      }
     }
 
 
@@ -29,6 +62,7 @@
       @include flex(center, center, column);
       gap: 25px;
       height: calc(100% - 170px);
+      padding: 15px 0;
 
       .line {
         background-color: black;
@@ -38,9 +72,11 @@
           width: 0.4px;
         }
       }
-      .icon{
+
+      .icon {
         @include flex(center, center, column);
         gap: 15px;
+
         & a {
           @include flex(center, center);
           width: 38px;
@@ -57,11 +93,47 @@
         }
       }
 
+      @media screen and (max-width: 360px) {
+        display: none;
+      }
     }
 
     .logo {
       @include text(700);
       transform: rotate(-90deg);
+      user-select: none;
+      @media screen and (max-width: 360px) {
+        transform: rotate(0deg);
+      }
+
+    }
+
+    .open {
+      visibility: visible;
+      opacity: 1;
     }
   }
+  .background {
+    position: fixed;
+    left: 130px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    @media screen and (max-width: 991px) {
+      left: 80px;
+    }
+    @media screen and (max-width: 360px) {
+      left: 0;
+    }
+  }
+  .backgroundOpen{
+    opacity: 1;
+    visibility: visible;
+  }
+
 }
