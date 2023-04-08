@@ -14,9 +14,11 @@
         .projects {
           width: 100%;
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
           gap: 3rem;
-
+          @media screen and (max-width: 695px){
+            grid-template-columns: 1fr;
+          }
         }
       }
     }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import s from './Project.module.scss'
 
 type WorkType = {
@@ -14,17 +14,18 @@ type ProjectPropsType = {
 }
 export const Project: React.FC<ProjectPropsType> = ({work}) => {
     const {img, title, description, linkDeploy} = work
+    const inputRef = useRef<HTMLAnchorElement>(null)
+    const onClickHandler = () => {
+        inputRef && inputRef.current?.click();
+    };
     const image = {
         backgroundImage: `url(${img})`
     }
-    const onClickHandler = () => {
-
-    }
     return (
         <div className={s.projectBlock} onClick={onClickHandler}>
-            <a style={image} href={linkDeploy}></a>
+            <a style={image} href={linkDeploy} target={'_blank'} ref={inputRef}></a>
             <div className={s.aboutProject}>
-                <p className={s.development}>Development</p>
+                <p className={s.development}>Development {title==='Learning cards' && '(command)'}</p>
                 <h3 className={s.title}>{title}</h3>
                 <p className={s.description}>{description}</p>
             </div>
