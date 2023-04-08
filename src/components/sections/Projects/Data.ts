@@ -1,27 +1,26 @@
-import social from '../../../assets/images/social-network.png'
-import todo from '../../../assets/images/todo.jpg'
-
-
+import countries from '../../../assets/images/countries.jpg'
+import todo from '../../../assets/images/todo.jpeg'
+import cards3 from '../../../assets/images/cards3.jpg'
 export const works = [
     {
         id: 1,
         title: 'Countries',
-        img: social,
-        description: 'React Redux-toolkit  Sass',
+        img: countries,
+        description: 'React TypeScript Redux-toolkit Redux-thunk  Scss',
         linkDeploy: 'https://yanakorobova.github.io/countries/',
     },
     {
         id: 2,
         title: 'TodoList',
         img: todo,
-        description: 'React  Redux-toolkit  Mui Sass Storybook',
-        linkDeploy: ''
+        description: 'React TypeScript Redux-toolkit  Redux-thunk Rest-API  Mui Scss Storybook Formik',
+        linkDeploy: 'https://yanakorobova.github.io/todolist/'
     },
     {
         id: 3,
-        title: 'Cards',
-        img: 'recipe',
-        description: 'lorem lorem lorem lorem',
-        linkDeploy: '',
+        title: 'Learning cards',
+        img: cards3,
+        description: 'React TypeScript Redux  Redux-thunk Rest-API Mui Scss Formik',
+        linkDeploy: 'https://alexander-gladkikh.github.io/cards/#/login',
     }
 ]
