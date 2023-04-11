@@ -34,7 +34,7 @@
             line-height: 21px;
             @include flex(flex-start, center);
             gap: 15px;
-            margin-top: 20px;
+            margin-top: 15px;
             word-break: break-word;
 
             .block {
@@ -46,12 +46,8 @@
               }
             }
 
-            .mail {
-              @include icon($color-back, 39px);
-            }
-
-            .phone {
-              @include icon($color-back, 43px);
+            .icon {
+              @include icon();
             }
           }
         }
