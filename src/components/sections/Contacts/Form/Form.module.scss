@@ -24,6 +24,7 @@
       }
 
       input {
+        text-overflow: ellipsis;
         border-radius: 30px;
         border: 1px solid #ddd;
         font-family: inherit;
@@ -46,6 +47,10 @@
       font-size: 15px;
       font-family: inherit;
       padding: 12px 26px;
+      @media screen and (max-width: 1230px) {
+        height: 238px;
+      }
+
     }
   }
 }
