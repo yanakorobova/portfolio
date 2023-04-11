@@ -41,13 +41,16 @@
   align-items: $align;
 }
 
-@mixin icon($color,$size) {
-  color: $color;
-  font-size: $size;
+@mixin icon() {
+  color: $color-back;
+  font-size: 100%;
+  width: 39px;
+  height: 39px;
 }
 
 @mixin section() {
   position: relative;
+  z-index: 8;
   width: calc(100% - 130px);
   left: 130px;
   padding: 70px 4.8% 100px 4.8%;
@@ -55,7 +58,7 @@
     width: calc(100% - 80px);
     left: 80px;
   }
-  @media screen and (max-width: 360px){
+  @media screen and (max-width: 360px) {
     left: 0;
     width: 100%;
   }
