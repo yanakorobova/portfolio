@@ -2,11 +2,9 @@ import {CgArrowsExchangeV} from 'react-icons/cg'
 import {FaJava, FaReact} from 'react-icons/fa'
 import {GrTest} from 'react-icons/gr'
 import {
-    SiHtml5,
     SiJavascript,
     SiJest,
     SiMui,
-    SiPython,
     SiRedux,
     SiSass,
     SiStorybook,
@@ -36,7 +34,7 @@ export const skills = [
     },
     {
         skillID: 4,
-        title: 'JavaScript',
+        title: 'TypeScript',
         Icons: SiTypescript,
         fill: '#0a12a6',
     },
@@ -48,54 +46,42 @@ export const skills = [
     },
     {
         skillID: 6,
-        title: 'Python',
-        Icons: SiPython,
-        fill: '#007acc',
-    },
-    {
-        skillID: 7,
         title: 'Axios',
         Icons: CgArrowsExchangeV,
         fill: '#671ddf',
     },
     {
-        skillID: 8,
+        skillID: 7,
         title: 'Jest',
         Icons: SiJest,
         fill: '#c63d14',
     },
     {
-        skillID: 9,
+        skillID: 8,
         title: 'SASS-SCSS',
         Icons: SiSass,
         fill: '#bf4080',
     },
     {
-        skillID: 10,
-        title: 'HTML5',
-        Icons: SiHtml5,
-        fill: '#bf4080',
-    },
-    {
-        skillID: 11,
+        skillID: 9,
         title: 'Rest-API',
         Icons: TbApi,
         fill: '#f9004d',
     },
     {
-        skillID: 12,
+        skillID: 10,
         title: 'StoryBook',
         Icons: SiStorybook,
         fill: '#FF4785',
     },
     {
-        skillID: 13,
+        skillID: 11,
         title: 'MUI',
         Icons: SiMui,
         fill: '#007FFF',
     },
     {
-        skillID: 14,
+        skillID: 12,
         title: 'Unit-tests',
         Icons: GrTest,
         fill: '#66bb6a',

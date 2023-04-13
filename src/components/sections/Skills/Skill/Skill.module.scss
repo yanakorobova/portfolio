@@ -2,30 +2,24 @@
 @import "../../../../assets/styles/variables";
 
 .skillBlock {
-  min-width: 320px;
-  flex: 1 1 25%;
-  padding: 0 15px;
-  list-style-type: none;
-  .inner {
-    row-gap: 30px;
-    @include flex(center, center, column);
+  //margin: 0 auto 25px auto;
+  @include flex(center, center, column);
 
-    .title {
-      font-size: 1.5rem;
-    }
+  & h3 {
+    font-size: 20px;
   }
 
   .square {
     background: #2b2b2b;
     border-radius: 10px;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     @include flex(center, center);
     flex-wrap: nowrap;
 
-    svg {
-      width: 60px;
-      height: 60px;
+    & svg {
+      width: 50px;
+      height: 50px;
       object-fit: cover;
       border-radius: 10px;
     }

@@ -14,17 +14,15 @@ type SkillPropsType = {
 }
 
 export const Skill: React.FC<SkillPropsType> = ({skill}) => {
-    const { Icons, title, fill } = skill
+    const {Icons, title, fill} = skill
 
     return (
-        <li className={s.skillBlock}>
-            <div className={s.inner}>
-                <div className={s.square}>
-                    <Icons size={50} color={fill} />
-                </div>
-                <h3 className={s.title}>{title}</h3>
+        <div className={s.skillBlock} >
+            <div className={s.square}>
+                <Icons color={fill}/>
             </div>
-        </li>
+            <h3>{title}</h3>
+        </div>
     );
 };
 
