@@ -16,8 +16,9 @@
   border: 1px solid $color-back;
   color: #666;
   font-family: inherit;
-  max-width: 220px;
+  max-width: 230px;
   transition: 250ms all ease-in-out;
+  z-index: 2;
   .buttonIcon {
     position: absolute;
     right: -1px;
