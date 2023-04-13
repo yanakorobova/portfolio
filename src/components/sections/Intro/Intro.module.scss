@@ -55,10 +55,10 @@
           }
 
           .description {
+            margin-top: 25px;
             & h1 {
               @include title(#666);
               font-size: 30px;
-
               & p {
                 margin: 0;
                 @include title($color-back);
@@ -76,7 +76,7 @@
             }
 
             .text {
-              margin-top: 40px;
+              margin-top: 30px;
               text-align: justify;
               @include text(400, $lH: 27px);
             }
