@@ -3,6 +3,7 @@ import s from 'components/sections/Intro/Intro.module.scss'
 import {Button} from "components/common/Button/Button";
 import {faDownload} from "@fortawesome/free-solid-svg-icons";
 import photo from 'assets/images/photo.jpg'
+import {Connection} from "../../common/Connection/Connection";
 
 
 export const Intro = () => {
@@ -21,7 +22,9 @@ export const Intro = () => {
                                     React/Redux/TypeScript. Now I am improving my skills in this direction and expanding
                                     them with new technologies. Open to your suggestions!</p>
                             </div>
-
+                            <div className={s.connection}>
+                                <Connection/>
+                            </div>
                             <a href={'CV'} download>
                                 <Button type={'button'} iconType={faDownload}>DOWNLOAD CV</Button>
                             </a>

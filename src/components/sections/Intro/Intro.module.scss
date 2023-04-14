@@ -12,6 +12,7 @@
 
     .container {
       @include container();
+
       .content {
         position: relative;
         display: grid;
@@ -23,6 +24,7 @@
           align-items: center;
           gap: 8%;
         }
+
         &::before {
           position: absolute;
           content: '';
@@ -45,6 +47,29 @@
           position: relative;
           z-index: 8;
 
+          .connection {
+            display: none;
+            & a {
+              @include flex(center, center);
+              width: 28px;
+              height: 28px;
+              color: black;
+              font-size: 30px;
+              &:last-child {
+                display: none;
+              }
+              &:hover {
+                color:  $color-back;
+              }
+            }
+            @media screen and (max-width: 370px) {
+              display: block;
+              @include flex(flex-start, center);
+              gap: 15px;
+              margin-bottom: 25px;
+            }
+          }
+
           .title {
             background-color: transparent;
             -webkit-background-clip: text;
@@ -56,9 +81,14 @@
 
           .description {
             margin-top: 25px;
+            margin-bottom: 50px;
+            @media screen and (max-width: 370px) {
+              margin-bottom: 35px;
+            }
             & h1 {
               @include title(#666);
               font-size: 30px;
+
               & p {
                 margin: 0;
                 @include title($color-back);
@@ -81,7 +111,6 @@
               @include text(400, $lH: 27px);
             }
 
-            margin-bottom: 50px;
           }
 
 
@@ -92,6 +121,7 @@
           z-index: 8;
           border-radius: 30px;
           height: 500px;
+
           &::before {
             position: absolute;
             content: '';
