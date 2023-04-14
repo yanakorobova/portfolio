@@ -13,7 +13,7 @@ export const Connection= () => {
             <a rel='noreferrer' href={'https://t.me/ysonne'} target={'_blank'}>
                 <FontAwesomeIcon icon={faTelegram} />
             </a>
-            <a rel='noreferrer' href={''} target={'_blank'}>
+            <a>
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a rel='noreferrer' href={'https://www.codewars.com/users/yana_kv'} target={'_blank'}>
