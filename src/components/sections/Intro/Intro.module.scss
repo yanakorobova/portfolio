@@ -107,8 +107,7 @@
 
             .text {
               margin-top: 30px;
-              text-align: justify;
-              @include text(400, $lH: 27px);
+              @include text(400, $lH: 30px);
             }
 
           }
@@ -120,7 +119,7 @@
           position: relative;
           z-index: 8;
           border-radius: 30px;
-          height: 500px;
+          height: 550px;
 
           &::before {
             position: absolute;
@@ -149,7 +148,7 @@
             background-position: center;
           }
 
-          @media screen and (max-width: 900px) {
+          @media screen and (max-width: 910px) {
             height: 430px;
           }
           @media screen and (max-width: 654px) {
