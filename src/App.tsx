@@ -5,6 +5,7 @@ import {Contacts} from "components/sections/Contacts/Contacts";
 import {Preloader} from "components/common/Preloader/Preloader";
 import {Skills} from "components/sections/Skills/Skills";
 import {Intro} from "components/sections/Intro/Intro";
+import {ParticlesContainer} from "./components/common/Particles/ParticlesContainer";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Skills/>
             <Projects/>
             <Contacts/>
+            <ParticlesContainer/>
         </>
     );
 }

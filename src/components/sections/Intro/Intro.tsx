@@ -2,7 +2,7 @@ import React from 'react';
 import s from 'components/sections/Intro/Intro.module.scss'
 import {Button} from "components/common/Button/Button";
 import {faDownload} from "@fortawesome/free-solid-svg-icons";
-import photo from 'assets/images/photo.jpg'
+import avatar from 'assets/images/avatar.jpg'
 import {Connection} from "../../common/Connection/Connection";
 
 
@@ -31,7 +31,7 @@ export const Intro = () => {
                         </div>
 
                         <div className={s.photo}>
-                            <img src={photo} alt={'photo'}/>
+                            <img src={avatar} alt={'avatar'}/>
                         </div>
                     </div>
 
