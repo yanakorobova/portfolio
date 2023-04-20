@@ -8,14 +8,14 @@ import {Intro} from "components/sections/Intro/Intro";
 
 function App() {
     return (
-        <div>
+        <>
             <Preloader/>
             <Header/>
             <Intro/>
             <Skills/>
             <Projects/>
             <Contacts/>
-        </div>
+        </>
     );
 }
 

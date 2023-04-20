@@ -51,10 +51,10 @@
             display: none;
             & a {
               @include flex(center, center);
-              width: 28px;
-              height: 28px;
+              width: 29px;
+              height: 29px;
               color: black;
-              font-size: 30px;
+              font-size: 31px;
               &:last-child {
                 display: none;
               }
@@ -65,7 +65,7 @@
             @media screen and (max-width: 370px) {
               display: block;
               @include flex(flex-start, center);
-              gap: 15px;
+              gap: 17px;
               margin-bottom: 25px;
             }
           }
@@ -83,7 +83,7 @@
             margin-top: 25px;
             margin-bottom: 50px;
             @media screen and (max-width: 370px) {
-              margin-bottom: 35px;
+              margin-bottom: 30px;
             }
             & h1 {
               @include title(#666);

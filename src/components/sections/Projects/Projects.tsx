@@ -6,7 +6,7 @@ import {Title} from "../../common/Title/Title";
 
 export const Projects = () => {
     const projects = works.map((work) => {
-        return <Project work={work}/>
+        return <Project key={work.id} work={work}/>
     })
 
     return (
