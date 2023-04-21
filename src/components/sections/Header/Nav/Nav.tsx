@@ -8,7 +8,7 @@ type NavPropsType = {
     open: boolean
     setOpen: (open: false) => void
 }
-export const Nav: React.FC<NavPropsType> = ({setOpen,open}) => {
+export const Nav: React.FC<NavPropsType> = ({setOpen, open}) => {
 
     const closeMenu = () => {
         setOpen(false)
@@ -20,28 +20,28 @@ export const Nav: React.FC<NavPropsType> = ({setOpen,open}) => {
             <HiXMark className={x} onClick={closeMenu}/>
             <ul className={links} onClick={closeMenu}>
                 <li>
-                    <div>
-                        <a href={"#intro"}>Main</a>
+                    <a href={"#intro"}>
+                        <p>Main</p>
                         <FontAwesomeIcon icon={faChevronRight} className={s.arr}/>
-                    </div>
+                    </a>
                 </li>
                 <li>
-                    <div>
-                        <a href={"#skills"}>Skills</a>
+                    <a href={"#skills"}>
+                        <p>Skills</p>
                         <FontAwesomeIcon icon={faChevronRight} className={s.arr}/>
-                    </div>
+                    </a>
                 </li>
                 <li>
-                    <div>
-                        <a href={"#projects"}>Projects</a>
+                    <a href={"#projects"}>
+                        <p>Projects</p>
                         <FontAwesomeIcon icon={faChevronRight} className={s.arr}/>
-                    </div>
+                    </a>
                 </li>
                 <li>
-                    <div>
-                        <a href={"#contacts"}>Contacts</a>
+                    <a href={"#contacts"}>
+                        <p>Contacts</p>
                         <FontAwesomeIcon icon={faChevronRight} className={s.arr}/>
-                    </div>
+                    </a>
                 </li>
             </ul>
         </nav>
