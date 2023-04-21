@@ -4,7 +4,7 @@
 .nav {
   width: auto;
   overflow: hidden;
-  padding: 30px 45px 70px 22.5px;
+  padding: 30px 2.5rem 70px 1rem;
   background: linear-gradient(-45deg, transparent 25px, #2d2d2d 0);
   .x {
     float: right;
@@ -25,13 +25,16 @@
     @include text(500, white, 20px, 40px);
     transform: translateX(-400px);
     transition: all 0.8s ease;
+    @media screen and (max-width: 360px) {
+     width: 100%;
+    }
     & a {
       cursor: pointer;
       text-decoration: none;
       color: inherit;
     }
 
-    li {
+   & li {
       width: 100%;
       color: #b6b6b6;
       cursor: pointer;
