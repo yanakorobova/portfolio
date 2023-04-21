@@ -33,26 +33,29 @@
 
     li {
       width: 100%;
-      cursor: pointer;
       color: #b6b6b6;
 
       &:hover {
         color: $color-back;
       }
 
-      &:hover div {
+      &:hover a {
         color: $color-back;
       }
 
-      &:hover div .arr {
+      &:hover a .arr {
         color: $color-back;
       }
 
-      & div {
+      & a {
         color: white;
         width: 100%;
+        cursor: pointer;
         @include flex(space-between, center);
 
+        & > p {
+          margin: 0;
+        }
         .arr {
           width: 8px;
           height: 24px;
