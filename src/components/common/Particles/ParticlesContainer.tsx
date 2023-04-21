@@ -16,14 +16,14 @@ export const ParticlesContainer = memo(() => {
     const options = {
         fullScreen: {
             enable: true,
-            zIndex: 1
+            zIndex: -1
         },
         particles: {
             number: {
-                value: windowWidth < 1000 ? 15 : 40,
+                value: windowWidth < 1000 ? 15 : 35,
                 density: {
                     enable: false,
-                    value_area: 800,
+                    value_area: 700,
                 },
             },
             color: {
@@ -64,7 +64,7 @@ export const ParticlesContainer = memo(() => {
             },
             line_linked: {
                 enable: true,
-                distance: windowWidth > 800 ? 150 : 100,
+                distance: windowWidth > 800 ? 170 : 100,
                 color: `#2f9f34`,
                 opacity: 0.4,
                 width: 2,
