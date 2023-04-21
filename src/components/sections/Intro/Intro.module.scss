@@ -49,19 +49,23 @@
 
           .connection {
             display: none;
+
             & a {
               @include flex(center, center);
               width: 29px;
               height: 29px;
               color: black;
               font-size: 31px;
+
               &:last-child {
                 display: none;
               }
+
               &:hover {
-                color:  $color-back;
+                color: $color-back;
               }
             }
+
             @media screen and (max-width: 370px) {
               display: block;
               @include flex(flex-start, center);
@@ -85,6 +89,7 @@
             @media screen and (max-width: 370px) {
               margin-bottom: 30px;
             }
+
             & h1 {
               @include title(#666);
               font-size: 30px;
@@ -108,8 +113,10 @@
             .text {
               margin-top: 30px;
               @include text(400, $lH: 30px);
+              @media screen and (max-width: 654px) {
+                text-align: justify;
+              }
             }
-
           }
 
 
