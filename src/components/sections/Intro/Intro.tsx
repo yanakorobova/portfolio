@@ -25,7 +25,10 @@ export const Intro = () => {
                             <div className={s.connection}>
                                 <Connection/>
                             </div>
-                            <a href={'CV'} download>
+                            <a href={'https://drive.google.com/file/d/1JslNPaUXnDpJdMD8zrE3z-V7Z8KuP8a7/view?usp=sharing'}
+                               target={'_blank'}
+                               rel='noreferrer'
+                            >
                                 <Button type={'button'} iconType={faDownload}>DOWNLOAD CV</Button>
                             </a>
                         </div>
