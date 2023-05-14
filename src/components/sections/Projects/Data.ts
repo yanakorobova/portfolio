@@ -1,5 +1,6 @@
 import countries from '../../../assets/images/countries.jpg'
 import todo from '../../../assets/images/todo.jpeg'
+import books from '../../../assets/images/books.jpg'
 import cards3 from '../../../assets/images/cards3.jpg'
 export const works = [
     {
@@ -22,5 +23,12 @@ export const works = [
         img: cards3,
         description: 'React TypeScript Redux  Redux-thunk Rest-API Mui Scss Formik',
         linkDeploy: 'https://alexander-gladkikh.github.io/cards/#/login',
+    },
+    {
+        id: 4,
+        title: 'Books Library',
+        img: books,
+        description: 'React TypeScript Redux Redux-toolkit Redux-thunk Rest-API  Scss AntDesign',
+        linkDeploy: 'https://yanakorobova.github.io/books/',
     }
 ]
