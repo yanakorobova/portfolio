@@ -2,7 +2,7 @@
 @import "../../../assets/styles/variables";
 
 .mainBlock {
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 390px) {
     margin-top: 15px;
   }
 
@@ -66,7 +66,7 @@
               }
             }
 
-            @media screen and (max-width: 370px) {
+            @media screen and (max-width: 390px) {
               display: block;
               @include flex(flex-start, center);
               gap: 17px;
@@ -92,7 +92,7 @@
           .description {
             margin-top: 25px;
             margin-bottom: 50px;
-            @media screen and (max-width: 370px) {
+            @media screen and (max-width: 390px) {
               margin-bottom: 30px;
             }
 
@@ -118,7 +118,7 @@
 
             .text {
               margin-top: 30px;
-              @include text(400, $lH: 30px);
+              @include text(400, $lH: 27px);
               @media screen and (max-width: 654px) {
                 text-align: justify;
               }

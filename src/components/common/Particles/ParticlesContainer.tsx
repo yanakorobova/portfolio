@@ -64,7 +64,7 @@ export const ParticlesContainer = memo(() => {
             },
             line_linked: {
                 enable: true,
-                distance: windowWidth > 800 ? 170 : 100,
+                distance: windowWidth > 800 ? 180 : 100,
                 color: `#2f9f34`,
                 opacity: 0.4,
                 width: 2,
