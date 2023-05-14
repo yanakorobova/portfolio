@@ -60,7 +60,7 @@
     color: white;
     .development {
       @include text(300, $lS: 0.5px);
-      margin-top: 0;
+      margin: 0;
     }
 
     .title {
@@ -70,6 +70,7 @@
     }
 
     .description {
+      margin-top: 0;
       height:75px;
       text-align: justify;
       word-spacing: 12px;
