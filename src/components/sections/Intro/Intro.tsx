@@ -25,7 +25,7 @@ export const Intro = () => {
                             <div className={s.connection}>
                                 <Connection/>
                             </div>
-                            <a href={'https://drive.google.com/file/d/1JslNPaUXnDpJdMD8zrE3z-V7Z8KuP8a7/view?usp=sharing'}
+                            <a href={'https://drive.google.com/file/d/141Db7sFS56IwHKQBG0d_tZGC2Cgr1PSF/view?usp=sharing'}
                                target={'_blank'}
                                rel='noreferrer'
                             >
